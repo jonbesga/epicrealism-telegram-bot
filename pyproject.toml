@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "replicatebot"
+version = "1.0.9"
+description = ""
+authors = ["Jon Besga <jonan.bsg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-telegram-bot = "^20.1"
+replicate = "^0.8.1"
+stripe = "^5.2.0"
+flask = {extras = ["async"], version = "^2.2.3"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.6"}
+asyncpg = "^0.27.0"
+alembic = "^1.10.2"
+psycopg2-binary = "^2.9.5"
+daphne = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
